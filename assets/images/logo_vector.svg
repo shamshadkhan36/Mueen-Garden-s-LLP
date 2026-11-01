@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <!-- Gradients for luxury depth -->
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0b241c"/>
+      <stop offset="100%" stop-color="#05140f"/>
+    </radialGradient>
+    <linearGradient id="leafGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <linearGradient id="leafCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <linearGradient id="leafTeal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2dd4bf"/>
+      <stop offset="100%" stop-color="#0d9488"/>
+    </linearGradient>
+    <linearGradient id="leafCoral" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fb923c"/>
+      <stop offset="100%" stop-color="#ea580c"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Circular Base -->
+  <circle cx="100" cy="100" r="96" fill="url(#bgGrad)" stroke="#c5a059" stroke-width="2.5"/>
+
+  <!-- Botanical Pinwheel Center Group -->
+  <g transform="translate(100, 86)">
+    <!-- Top Leaf (Lush Emerald) -->
+    <path d="M 0,0 C -18,-24 -14,-50 0,-62 C 14,-50 18,-24 0,0 Z" fill="url(#leafGreen)"/>
+    <path d="M 0,0 L 0,-56" stroke="#ffffff" stroke-width="1.2" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Top Right Leaf (Vibrant Cyan) -->
+    <g transform="rotate(60)">
+      <path d="M 0,0 C -16,-22 -12,-46 0,-58 C 12,-46 16,-22 0,0 Z" fill="url(#leafCyan)"/>
+      <path d="M 0,0 L 0,-52" stroke="#ffffff" stroke-width="1.2" stroke-linecap="round" opacity="0.6"/>
+    </g>
+
+    <!-- Bottom Right Leaf (Deep Teal) -->
+    <g transform="rotate(120)">
+      <path d="M 0,0 C -16,-22 -12,-46 0,-58 C 12,-46 16,-22 0,0 Z" fill="url(#leafTeal)"/>
+      <path d="M 0,0 L 0,-52" stroke="#ffffff" stroke-width="1.2" stroke-linecap="round" opacity="0.6"/>
+    </g>
+
+    <!-- Bottom Left Leaf (Warm Terracotta / Coral) -->
+    <g transform="rotate(200)">
+      <path d="M 0,0 C -16,-22 -12,-46 0,-58 C 12,-46 16,-22 0,0 Z" fill="url(#leafCoral)"/>
+      <path d="M 0,0 L 0,-52" stroke="#ffffff" stroke-width="1.2" stroke-linecap="round" opacity="0.6"/>
+    </g>
+
+    <!-- Left Leaf (Sky Cyan) -->
+    <g transform="rotate(280)">
+      <path d="M 0,0 C -16,-22 -12,-46 0,-58 C 12,-46 16,-22 0,0 Z" fill="url(#leafCyan)"/>
+      <path d="M 0,0 L 0,-52" stroke="#ffffff" stroke-width="1.2" stroke-linecap="round" opacity="0.6"/>
+    </g>
+
+    <!-- Center node -->
+    <circle cx="0" cy="0" r="4.5" fill="#c5a059"/>
+  </g>
+
+  <!-- Script Typography for 'gardens' -->
+  <text x="100" y="162" text-anchor="middle" font-family="'Playfair Display', cursive, serif" font-style="italic" font-size="28" font-weight="700" fill="#ffffff" letter-spacing="1">gardens</text>
+  <text x="100" y="178" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" font-weight="600" fill="#c5a059" letter-spacing="2">EST. 2010</text>
+</svg>
